@@ -1,0 +1,105 @@
+@import url(common.css);
+/*-----------------------
+メインビジュアル
+------------------------*/
+main h1 {
+  font-size: 27px;
+  color: #9a0101;
+  background-image: url(../img/taberupage/kyoudoryouripage/cutlery.svg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  margin-top: 90px;
+  background-position: center top;
+}
+
+main section {
+  display: flex;
+  padding-bottom: 40px;
+}
+main section:last-of-type {
+  margin-bottom: 50px;
+}
+main section p img {
+  border-radius: 10px 0 0 10px;
+}
+main section div {
+  background-color: var(--base-color);
+  border-radius: 0 10px 10px 0;
+  padding: 35px 30px;
+  flex: 1;
+  /* 親 */
+  position: relative;
+}
+main section h2 {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: #9a0101 2px dashed;
+}
+main section p {
+  text-align: left;
+}
+main section p.button {
+  color: var(--main-color);
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 2px 20px;
+  width: fit-content;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  /* 子 */
+}
+main section p.button:hover {
+  color: #fff;
+  background-color: #9a0101;
+  border-radius: 18px;
+  padding: 2px 20px;
+}
+/* ノートPC */
+@media (max-width: 1199px) {
+  main section {
+    display: block;
+    margin: 0 auto;
+  }
+  main section h2 {
+    font-size: 25px;
+  }
+  main section p img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 80%; /* 必要に応じて画像サイズを調整 */
+    margin: 0 auto; /* 画像を中央に配置 */
+    display: block; /* imgをブロック要素にして中央揃えを効かせる */
+  }
+  main section div {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 40px;
+    width: 80%; /* 必要に応じて画像サイズを調整 */
+    margin: 0 auto; /* 画像を中央に配置 */
+    display: block; /* imgをブロック要素にして中央揃えを効かせる */
+    margin-bottom: 50px;
+  }
+  main section div p {
+    margin-bottom: 20px;
+  }
+  main section p.button {
+    position: unset;
+    margin: 0 auto;
+  }
+}
+/* スマホ縦 */
+@media (max-width: 575px) {
+  main section p img {
+    width: 100%; /* 必要に応じて画像サイズを調整 */
+  }
+  main section div {
+    padding: 20px;
+    width: 100%; /* 必要に応じて画像サイズを調整 */
+  }
+}

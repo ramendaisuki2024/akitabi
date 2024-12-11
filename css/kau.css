@@ -1,0 +1,221 @@
+@import url(common.css);
+/*-----------------------
+メインビジュアル
+------------------------*/
+.visual {
+  color: #fff;
+  font-size: 100px;
+  font-family: "Darumadrop One", sans-serif;
+  padding: 210px 15px;
+  background-image: url(../img/kaupage/mainv-shop.webp);
+  /* ブラウザが狭くなっても、全体が表示される
+  真ん中から表示される */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 90px;
+  line-height: 1;
+}
+.visual p br.sp-only {
+  display: none;
+}
+/* 買う */
+main h1 {
+  font-size: 27px;
+  color: #9a0101;
+  background-image: url(../img/taberupage/cutlery.svg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  /* background-color: aqua; */
+  background-position: center top;
+}
+main h1 + p {
+  /* background-color: yellow; */
+  max-width: 727px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 90px;
+}
+/* 目次 */
+main section.contents {
+  background-color: #fff4e4;
+  padding: 30px 65px 30px 50px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 90px;
+}
+main section.contents h2 {
+  background-image: url(../img/kaupage/table-of-contents.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 45px;
+  margin-bottom: 26px;
+}
+main section.contents ul li {
+  background-image: url(../img/kaupage/circle.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 35px;
+  margin-left: 10px;
+  border-bottom: 2px #9a0101 dashed;
+  margin-bottom: 15px;
+}
+main section.contents ul li a:hover {
+  color: var(--main-color);
+}
+
+/* 各section 共通設定*/
+main section.standard > section,
+main section.partner > section,
+main section.souvenir-shop > section {
+  margin-bottom: 60px;
+}
+main section.standard h2,
+main section.partner h2,
+main section.souvenir-shop h2 {
+  font-weight: bold;
+  font-size: 27px;
+  text-align: left;
+  border-bottom: 3px solid var(--main-color);
+  margin-bottom: 60px;
+}
+main section h3 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 27px;
+  text-align: left;
+  margin-bottom: 30px;
+  /* background-color: aqua; */
+}
+main section h3::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--main-color);
+  width: 8px;
+  height: 43px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+main section div.flex {
+  display: flex;
+  column-gap: 30px;
+}
+main section div.flex .left {
+  flex-basis: 475px;
+}
+main section div.flex .left img {
+  width: 100%;
+  object-fit: cover;
+}
+main section div.flex .right {
+  flex-basis: 605px;
+}
+main section div.flex p:nth-child(2) {
+  text-align: left;
+  /* background-color: aqua; */
+}
+main section section.color {
+  background-color: #fff4e4;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 20px;
+  /* 親 */
+  position: relative;
+}
+main section section.color h4 {
+  font-size: 27px;
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, rgba(95, 154, 1, 0.5) 50%);
+  width: fit-content;
+  margin-bottom: 30px;
+}
+main section.standard section.color p img,
+main section.partner section.color p img {
+  /* 子 */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main section section.color p {
+  text-align: left;
+  max-width: 594px;
+}
+/* 秋田県産品プラザ */
+main section.souvenir-shop p img {
+  object-fit: cover;
+  height: 561px;
+  border-radius: 10px;
+}
+main section.souvenir-shop section.color div.flex2 {
+  display: flex;
+  column-gap: 50px;
+}
+main section.souvenir-shop section.color address {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+  flex-basis: 356px;
+}
+/* ノートPC */
+@media (max-width: 1199px) {
+  main section section.color p img {
+    max-width: 35%;
+  }
+}
+/* タブレット */
+@media (max-width: 991px) {
+  .visual {
+    font-size: 75px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    /* ブラウザが狭くなっても、全体が表示される
+  真ん中から表示される */
+  }
+  main section div.flex {
+    display: block;
+  }
+  main section div.flex .left {
+    padding-bottom: 20px;
+  }
+  main section.standard section.color p img,
+  main section.partner section.color p img {
+    /* position: absoluteを解除して通常のフローに戻す */
+    position: unset;
+    /* 必要に応じて画像サイズを調整 */
+    max-width: 100%;
+    /* 画像を中央に配置 */
+    margin: 0 auto;
+    /* imgをブロック要素にして中央揃えを効かせる */
+    display: block;
+    padding-top: 20px;
+    margin-bottom: -40px;
+  }
+  main section section.color p {
+    max-width: unset;
+  }
+  main section.souvenir-shop section.color div.flex2 {
+    display: block;
+  }
+  main section.souvenir-shop section.color address {
+    margin-top: 20px;
+  }
+}
+/* スマホ縦 */
+@media (max-width: 575px) {
+  .visual {
+    font-size: 80px;
+  }
+  .visual p br.sp-only {
+    display: block;
+  }
+  main section section.color h4 {
+    font-size: 20px;
+  }
+  main section.souvenir-shop p img {
+    height: 300px;
+  }
+}

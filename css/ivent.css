@@ -1,0 +1,107 @@
+@import url(common.css);
+/*-----------------------
+メインビジュアル
+------------------------*/
+.visual {
+  color: #fff;
+  font-size: 100px;
+  font-family: "Darumadrop One", sans-serif;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  background-image: url(../img/iventpage/mainv1129.webp);
+  /* ブラウザが狭くなっても、全体が表示される
+  真ん中から表示される */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 90px;
+  line-height: 1;
+}
+/*イベント */
+main h1 {
+  font-size: 27px;
+  color: #9a0101;
+  background-image: url(../img/miru_taikensurupage/human.svg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-position: center top;
+}
+main h1 + p {
+  max-width: 727px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 90px;
+}
+/* 各イベント */
+main div.flex {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
+}
+main section {
+  max-width: 350px;
+  margin: 0 auto;
+}
+main section p img {
+  border-radius: 10px 10px 0 0;
+}
+main section div {
+  background-color: var(--base-color);
+  /* max-width: 350px; */
+  width: 100%;
+  padding: 15px 20px 20px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+main section div h2 {
+  font-weight: bold;
+  border-bottom: #9a0101 dashed 2px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+main section div p {
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+main ul.flex {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+main ul.flex li {
+  margin: 40px 0 90px 0;
+}
+main ul.flex li.firstpage {
+  color: #ffffff;
+  background-color: var(--main-color);
+  padding: 6px 17px;
+  border-radius: 50px;
+}
+main ul.flex li.secondpage {
+  background-color: var(--base-color);
+  padding: 6px 17px;
+  border-radius: 50px;
+}
+main ul.flex li.thirdpage {
+  background-color: var(--base-color);
+  padding: 6px 17px;
+  border-radius: 50px;
+}
+@media (max-width: 1160px) {
+  main section {
+    max-width: 400px;
+  }
+  main section p img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .visual {
+    font-size: 65px;
+  }
+}

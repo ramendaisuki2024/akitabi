@@ -1,0 +1,522 @@
+@import url(common.css);
+
+/*-----------------------
+メインビジュアル
+------------------------*/
+.visual {
+  color: #fff;
+  font-size: 100px;
+  font-family: "Darumadrop One", sans-serif;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  /* padding-right: 10%; */
+  background-image: url(../img/toppage/mainvisual1.webp);
+  /* ブラウザが狭くなっても、全体が表示される
+  真ん中から表示される */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 90px;
+  line-height: 1;
+}
+/* ページ表示時フェードアップ */
+.visual p {
+  opacity: 0;
+  animation: fadeup 3s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+@keyframes fadeup {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ---------------------
+    メイン
+    ----------------- */
+/* セクション共通 */
+main section h2 {
+  font-size: 25px;
+  color: #9a0101;
+}
+
+/* 各セクション */
+/* -----------さて、何しよう？ ------------------*/
+/* さて、何しよう？ */
+main section.whatdo h2 {
+  background-image: url(../img/toppage/watch.svg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  /* background-color: aqua; */
+  background-position: center top;
+}
+/* 観る・体験する×5 */
+main section.whatdo h3 {
+  color: #9a0101;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: fit-content;
+  padding: 12px 27px;
+  border-radius: 28px;
+  transition: 0.5s;
+  z-index: 1;
+}
+/* ホバー時色変更 */
+main section.whatdo a:hover h3 {
+  color: #fff;
+  background-color: #9a0101;
+}
+/* position:absoluteの親 */
+main section.whatdo section {
+  position: relative;
+}
+/* 子　h3の位置変更 */
+main section.whatdo div section h3.button1 {
+  position: absolute;
+  bottom: 40px;
+  left: 57px;
+}
+main section.whatdo div section h3.button2 {
+  position: absolute;
+  bottom: 40px;
+  left: 102px;
+}
+main section.whatdo div section h3.button3 {
+  position: absolute;
+  bottom: 40px;
+  left: 103px;
+}
+main section.whatdo div section h3.button4 {
+  position: absolute;
+  bottom: 40px;
+  left: 92px;
+}
+main section.whatdo div section h3.button5 {
+  position: absolute;
+  bottom: 40px;
+  left: 112px;
+}
+
+/* \どこさいぐ?/×5 */
+main section.whatdo section h3 + p {
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 27px;
+  color: #9a0101;
+  padding-bottom: 6px;
+}
+/* ホバー時飛び跳ねる */
+main section.whatdo a:hover .text-bounce {
+  display: inline-block;
+  animation: bounce 1s normal;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+main section.whatdo div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: darkkhaki; */
+  background-image: url(../img/toppage/akitakennokatati.png);
+  background-repeat: no-repeat;
+  /* 秋田県の形 */
+  background-position: top 80px center;
+  /* 95+90+90 */
+  padding-bottom: 275px;
+}
+/* aタグ5つ位置の調整 */
+main section.whatdo div a:nth-child(1) {
+  position: relative;
+  top: 95px;
+  /* background-color: yellow; */
+}
+main section.whatdo div a:nth-child(2) {
+  position: relative;
+  top: 273px;
+  /* background-color: yellow; */
+}
+main section.whatdo div a:nth-child(3) {
+  position: relative;
+  top: -31px;
+  /* background-color: yellow; */
+}
+main section.whatdo div a:nth-child(4) {
+  position: relative;
+  /* 95+90px; */
+  top: 185px;
+  /* background-color: yellow; */
+}
+main section.whatdo div a:nth-child(5) {
+  position: relative;
+  /* 90-31px */
+  top: 59px;
+  /* background-color: yellow; */
+}
+/* ホバー時画像の枠線 */
+main section.whatdo a img {
+  border: #fff 3px solid;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+main section.whatdo a:hover img {
+  border: #9a0101 3px solid;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+/*------------- 秋田の四季 --------------*/
+main section.season div.text-shadow p {
+  display: inline-block;
+  text-align: left;
+  padding: 0 30px;
+}
+main section.season div.text-shadow {
+  color: #fff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url(../img/toppage/kanpuzan.jpg);
+  /* ブラウザが狭くなっても、全体が表示される
+  上から表示される */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 80px;
+}
+
+main section.season div h2 {
+  color: #fff;
+  font-size: 27px;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  background-image: url(../img/toppage/leaf.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+main section.season #triple-slider {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+main section.season #main-slider {
+  margin-bottom: 5px;
+}
+main section.season #main-slider img {
+  border-radius: 10px;
+  width: 100%;
+}
+main section.season #sub-slider {
+  margin-bottom: 10px;
+}
+main section.season #sub-slider li {
+  margin-left: 5px;
+}
+main section.season #sub-slider img {
+  border-radius: 10px;
+}
+main section.season #text-slider {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: var(--base-color);
+}
+main section.season #text-slider h3 {
+  font-size: 27px;
+  font-weight: bold;
+  border-bottom: 2px #9a0101 dashed;
+  margin-bottom: 10px;
+}
+main section.season #text-slider p:nth-child(2) {
+  padding-bottom: 20px;
+}
+main section.season #text-slider p:last-of-type a {
+  font-weight: bold;
+  color: #9a0101;
+  background-color: #fff;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  padding: 2px 20px;
+  border-radius: 28px;
+}
+main section.season #text-slider p:last-of-type a:hover {
+  color: #fff;
+  background-color: #9a0101;
+}
+.slick-arrow {
+  z-index: 1;
+}
+.slick-prev {
+  /* 前矢印 */
+  left: 10px;
+}
+.slick-next {
+  /* 次矢印 */
+  right: 10px;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #fff;
+}
+/* -----------エリアから探す ------------------*/
+main section.search div.container {
+  padding-bottom: 90px;
+}
+main section.search h2 {
+  background-image: url(../img/toppage/line.svg), url(../img/toppage/watch.svg);
+  background-repeat: repeat-x, no-repeat;
+  background-position: top center, top 203px center;
+  padding-top: 242px;
+  padding-bottom: 80px;
+}
+main section.search div.container hgroup {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 28px 28px;
+  text-align: left;
+  padding: 6px 18px 9px;
+  transition: 0.5s;
+  width: 100%;
+}
+/* ホバー時背景色変更 */
+main section.search div.container a:hover hgroup {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+main section.search div.container a hgroup {
+  transition: 1s;
+}
+main section.search div.container hgroup p {
+  font-size: 15px;
+}
+/* upper */
+main section.search div.container div.upper {
+  display: flex;
+  column-gap: 30px;
+  margin: 0 auto;
+}
+main section.search div.container div.upper a {
+  /* hgroupのposition:absoluteの親 */
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  /* width: fit-content; */
+  /* margin: 0 auto; */
+}
+main section.search div.container div.upper hgroup {
+  /* 子 */
+  position: absolute;
+  bottom: 0;
+}
+/* middle */
+main section.search div.container div.middle {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-bottom: 30px;
+  /* width: fit-content; */
+  margin: 0 auto 30px;
+}
+main section.search div.container div.middle a {
+  /* hgroupのposition:absoluteの親 */
+  position: relative;
+  display: block;
+}
+main section.search div.container div.middle hgroup {
+  /* 子 */
+  position: absolute;
+  bottom: 0;
+}
+
+/* lower */
+main section.search div.container div.lower {
+  display: flex;
+  column-gap: 30px;
+  margin: 0 auto;
+}
+main section.search div.container div.lower a {
+  /* hgroupのposition:absoluteの親 */
+  position: relative;
+  display: block;
+  /* width: fit-content; */
+  /* margin: 0 auto; */
+}
+main section.search div.container div.lower hgroup {
+  /* 子 */
+  position: absolute;
+  bottom: 0;
+}
+
+/* -----------お知らせ ------------------*/
+.curve {
+  background-image: url(../img/toppage/curve1.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  padding-top: 108px;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: wave_mv;
+  animation-timing-function: linear;
+}
+main section.infomation {
+  background: #fff4e4;
+  padding-bottom: 90px;
+}
+main section.infomation h2 {
+  background-image: url(../img/toppage/bell.svg);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-position: center top;
+}
+main section.infomation div.container div.back {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 75px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* 各お知らせ */
+main section.infomation div.container dl div {
+  display: flex;
+  border-bottom: 2px #9a0101 dashed;
+  line-height: 3;
+  text-align: left;
+}
+main section.infomation div.container div dt {
+  padding-right: 25px;
+}
+/* ホバー時 */
+main section.infomation div.container dl dd a:hover {
+  color: var(--main-color);
+}
+/* お知らせ一覧はこちら */
+main section.infomation div.container p {
+  padding-top: 20px;
+  text-align: right;
+}
+main section.infomation div.container p a {
+  padding: 5px 47px 5px 0;
+  background-image: url(../img/toppage/next.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+/* ホバー時→ */
+main section.infomation div.container p a:hover {
+  background-position: right center;
+  color: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+  /* -----------さて、何しよう？ ------------------*/
+  .visual {
+    font-size: 90px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  main section.whatdo h2 {
+    padding-bottom: 40px;
+  }
+  main section.whatdo div.container {
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+    /* 秋田県の形 */
+    background-position: top center;
+    background-size: contain;
+    padding-bottom: 160px;
+  }
+  /* aタグ5つ位置の調整 */
+  main section.whatdo div a:nth-child(1) {
+    position: unset;
+  }
+  main section.whatdo div a:nth-child(2) {
+    position: unset;
+  }
+  main section.whatdo div a:nth-child(3) {
+    position: unset;
+  }
+  main section.whatdo div a:nth-child(4) {
+    position: unset;
+  }
+  main section.whatdo div a:nth-child(5) {
+    position: unset;
+  }
+
+  /*------------- 秋田の四季 --------------*/
+  main section.season div:first-child {
+    /* 消さない */
+    background-attachment: unset;
+  }
+  main section.season div.container {
+    padding-bottom: 80px;
+  }
+
+  /* -----------エリアから探す ------------------*/
+  main section.search div.container div.upper {
+    display: block;
+    max-width: 450px;
+  }
+  main section.search div.container div.middle {
+    display: block;
+    max-width: 450px;
+    margin-bottom: 0;
+  }
+  main section.search div.container div.lower {
+    display: block;
+    max-width: 450px;
+  }
+  main section.search div.container div.upper a,
+  main section.search div.container div.middle a,
+  main section.search div.container div.lower a {
+    margin-bottom: 10px;
+  }
+  main section.search div.container p img {
+    width: 100%;
+  }
+  /* -----------お知らせ ------------------*/
+  main section.infomation div.container div.back {
+    padding: 25px 30px;
+  }
+  main section.infomation div.container dl div {
+    display: block;
+    line-height: unset;
+  }
+  main section.infomation div.container dl dt {
+    padding-top: 10px;
+  }
+  main section.infomation div.container dl dd {
+    margin-bottom: 10px;
+  }
+}
+
+/* タブレット */
+@media (max-width: 991px) {
+  .visual {
+    font-size: 75px;
+  }
+}
+@media (max-width: 767px) {
+  main section.whatdo div.container {
+    padding-bottom: 100px;
+  }
+}
+/* スマホ縦 */
+@media (max-width: 575px) {
+  .visual {
+    font-size: 48px;
+  }
+  main section h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋田県の観光サイト あきたび</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html"><img src="img/toppage/logo.svg" alt="秋田県の観光サイト あきたび"></a>
+            </h1>
+            <button class="hmenu"><span></span></button>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">TOP</a></li>
+                    <li><a href="miru_taikensuru.html">観る・体験する</a></li>
+                    <li><a href="taberu.html">食べる</a></li>
+                    <li><a href="kau.html">買う</a></li>
+                    <li><a href="tomaru.html">泊まる</a></li>
+                    <li><a href="ivent.html">イベント</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- メインビジュアル -->
+    <!-- 背景画像 -->
+    <div class="visual  text-shadow bgswitcher wave">
+        <p>あきたさ、よぐきたな~<br>
+            ゆっくりしてけれ~</p><br><br>
+    </div>
+
+    <!-- メイン -->
+    <main>
+        <!-- 背景画像（時計アイコンと秋田県の形） -->
+        <section class="whatdo">
+            <h2>さて、何しよう？</h2>
+            <div class="container">
+                <a href="miru_taikensuru.html">
+                    <section class="scroll">
+                        <h3 class="button1">観る・体験する</h3>
+                        <p class="text-bounce">\どこさいぐ?/</p>
+                        <p><img src="img/toppage/mirutaikensuru.png" alt="なまはげ"></p>
+                    </section>
+                </a>
+                <a href="tomaru.html">
+                    <section class="scroll">
+                        <h3 class="button2">泊まる</h3>
+                        <p class="text-bounce">\ゆっくり、やすんでけれ/</p>
+                        <p><img src="img/toppage/tomaru.png" alt="温泉"></p>
+                    </section>
+                </a>
+                <a href="taberu.html">
+                    <section class="scroll">
+                        <h3 class="button3">食べる</h3>
+                        <p class="text-bounce">\しったげうんめぇ/</p>
+                        <p><img src="img/toppage/taberu.png" alt="稲庭うどん"></p>
+                    </section>
+                </a>
+
+                <a href="#">
+                    <section class="scroll">
+                        <h3 class="button4">イベント</h3>
+                        <p class="text-bounce">\たのしんでけれ/</p>
+                        <p><img src="img/toppage/ivent.png" alt="花火"></p>
+                    </section>
+                </a>
+                <a href="kau.html">
+                    <section class="scroll">
+                        <h3 class="button5">買う</h3>
+                        <p class="text-bounce">\いいものいっぺあるど/</p>
+                        <p><img src="img/toppage/kau.png" alt="秋田のお土産"></p>
+                    </section>
+                </a>
+            </div>
+        </section>
+
+        <!-- 背景画像（葉っぱアイコンと寒風山の写真） -->
+        <section class="season">
+            <div class="text-shadow">
+                <h2>秋田の四季</h2>
+                <p>四季のはっきりとした移り変わりを楽しめるのが秋田の魅力です。<br>秋田の美しい景色を眺めてリフレッシュしませんか？</p>
+            </div>
+
+            <div id="triple-slider" class="container scroll">
+                <ul id="main-slider">
+                    <li><a href="#"><img src="img/toppage/spring.webp" alt="桜"></a></li>
+                    <li><a href="#"><img src="img/toppage/summer.webp" alt="花火"></a></li>
+                    <li><a href="#"><img src="./img/toppage/autum.webp" alt="紅葉"></a></li>
+                    <li><a href="#"><img src="./img/toppage/winter.webp" alt="かまくら"></a></li>
+                </ul>
+                <ul id="sub-slider">
+                    <li><img src="img/toppage/spring.webp" alt="桜"></li>
+                    <li><img src="img/toppage/summer.webp" alt="花火"></li>
+                    <li><img src="./img/toppage/autum.webp" alt="紅葉"></li>
+                    <li><img src="./img/toppage/winter.webp" alt="かまくら"></li>
+                </ul>
+                <div id="text-slider">
+                    <div>
+                        <h3>秋田の春</h3>
+                        <p>
+                            秋田の春は、新緑と色とりどりの花々が美しく彩る、穏やかな季節です。<br>桜や菜の花が咲き誇り、のどかな風景の中で心穏やかなひとときを過ごせます。<br>温泉でゆったりと春の訪れを感じることもできます。
+                        </p>
+                        <p><a href="#">詳しく見る</a></p>
+                    </div>
+                    <div>
+                        <h3>秋田の夏</h3>
+                        <p>
+                            秋田の夏は、豊かな緑と涼しい風が心地よい季節です。<br>田んぼが青々と広がり、海や山のアクティビティを楽しむには絶好の時期です。<br>夏祭りも各地で開催され、にぎやかな秋田の文化を体感できます。
+                        </p>
+                        <p><a href="#">詳しく見る</a></p>
+                    </div>
+                    <div>
+                        <h3>秋田の秋</h3>
+                        <p>
+                            秋田の秋は、豊かな自然を一層強く感じられる季節です。<br>涼やかな風が吹き始め、森や川、湖が色とりどりに染まり、まるで絵画のような美しい風景が広がります。<br>秋ならではの魅力をたっぷりとお楽しみください。
+                        </p>
+                        <p><a href="#">詳しく見る</a></p>
+                    </div>
+                    <div>
+                        <h3>秋田の冬</h3>
+                        <p>
+                            秋田の冬は、澄んだ空気と雪景色が広がる美しい季節です。<br>雪に覆われた温泉地でのんびりと過ごし、冬の味覚を堪能することができます。<br>冬ならではの幻想的な景色が、心に深く残る体験を提供してくれます。
+                        </p>
+                        <p><a href="#">詳しく見る</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 背景画像（ライン・虫眼鏡アイコン） -->
+        <section class="search">
+            <h2>エリアから探す</h2>
+            <div class="container">
+
+
+                <div class="upper">
+                    <a href="#" class="target1">
+                        <hgroup>
+                            <h3>秋田</h3>
+                            <p>あきた</p>
+                        </hgroup>
+                        <p><img src="img/toppage/akita.png" alt="秋田"></p>
+                    </a>
+                    <a href="#" class="target2">
+                        <hgroup>
+                            <h3>白神・能代・男鹿</h3>
+                            <p>しらかみ・のしろ・おが</p>
+                        </hgroup>
+                        <p><img src="img/toppage/sirakami.png" alt="白神・能代・男鹿"></p>
+                    </a>
+
+                    <a href="#" class="target3">
+                        <hgroup>
+                            <h3>大館・阿仁・森吉</h3>
+                            <p>おおだて・あに・もりよし </p>
+                        </hgroup>
+                        <p><img src="img/toppage/oodate.png" alt="大館・阿仁・森吉"></p>
+                    </a>
+                </div>
+
+
+                <div class="middle scroll">
+                    <a href="#" class="target1">
+                        <hgroup>
+                            <h3>十和田・八幡平</h3>
+                            <p>とわだ・はちまんたい</p>
+                        </hgroup>
+                        <p><img src="img/toppage/towada.png" alt="十和田・八幡平"></p>
+                    </a>
+                    <a href="#" class="target2">
+                        <hgroup>
+                            <h3>由利本荘・鳥海</h3>
+                            <p>ゆりほんじょう・ちょうかい</p>
+                        </hgroup>
+                        <p><img src="img/toppage/yurihonjou.png" alt="由利本荘・鳥海"></p>
+                    </a>
+                </div>
+                <div class="lower scroll">
+                    <a href="#" class="target1">
+                        <hgroup>
+                            <h3>大曲・角館・田沢湖</h3>
+                            <p>おおまがり・かくのだて・たざわこ</p>
+                        </hgroup>
+                        <p><img src="img/toppage/oomagari.png" alt="大曲・角館・田沢湖"></p>
+                    </a>
+
+
+                    <a href="#" class="target2">
+                        <hgroup>
+                            <h3>横手・増田</h3>
+                            <p>よこて・ますだ </p>
+                        </hgroup>
+                        <p><img src="img/toppage/yokote.png" alt="横手・増田"></p>
+                    </a>
+                    <a href="#" class="target3">
+                        <hgroup>
+                            <h3>湯沢・栗駒</h3>
+                            <p>ゆざわ・くりこま</p>
+                        </hgroup>
+                        <p><img src="img/toppage/yuzawa.png" alt="湯沢・栗駒"></p>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- 背景画像（ベルアイコン） -->
+        <!-- 背景画像（曲線） -->
+
+        <div class="curve"> </div>
+        <section class="infomation">
+            <h2>お知らせ</h2>
+            <div class="container scroll">
+                <div class="back">
+                    <dl>
+                        <div>
+                            <dt><time datetime="2024-12-01">2024-12-01</time></dt>
+                            <dd><a href="#">大雪による交通情報について</a></dd>
+                        </div>
+                        <div>
+                            <dt><time datetime="2024-11-30">2024-11-30</time></dt>
+                            <dd><a href="#">男鹿駅乗合タクシー価格改定のお知らせ</a></dd>
+                        </div>
+                        <div>
+                            <dt><time datetime="2024-11-20">2024-11-20</time></dt>
+                            <dd><a href="#">令和７年度秋田県おもてなし宿泊支援事業実施のお知らせ</a></dd>
+                        </div>
+                        <div>
+                            <dt><time datetime="2024-11-01">2024-11-01</time></dt>
+                            <dd><a href="#">秋田犬保護のための寄付専用サイトがオープンしました&#xFF01;</a></dd>
+                        </div>
+                        <div>
+                            <dt><time datetime="2024-10-25">2024-10-25</time></dt>
+                            <dd><a href="#">秋田の特産品を全国発送します&#xFF01;「あきたショップ」</a></dd>
+                        </div>
+                    </dl>
+                    <p><a href="#">お知らせ一覧はこちら</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p class="contact container"><a href="#">お問い合わせ</a></p>
+        <p class="offer container"><small>画像提供&#xFF1A;<br>一般社団法人秋田県観光連盟<br>秋田県観光文化スポーツ部 誘客推進課<br>ふるさわおんせん</small></p>
+        <p>
+            <small>&copy;2024 AKITABI. All rights reserved.</small>
+        </p>
+    </footer>
+    <script src="js/common_script.js"></script>
+    <script src="js/bgswitcher_script.js"></script>
+    <script src="js/slick_script.js"></script>
+</body>
+</html>
